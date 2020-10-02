@@ -1,0 +1,155 @@
+.weather {
+	display: flex;
+	justify-content: center;
+	color: #6ac2df;
+}
+
+.weather_today {
+	width: 100%;
+	padding: 20px 40px 20px;
+	margin: 0 3px;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 10px 1px #CC99FE;
+}
+
+.weather_today.active {
+	background-color: rgba(224, 224, 224, 0.8);
+	box-shadow: 0 0 10px 1px rgb(0, 0, 0);
+	color: rgb(112, 4, 45);
+
+}
+
+.region p {
+	font-size: 3rem;
+	padding: 0 10px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.container_weather {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.weather_temperature p {
+	font-size: 25rem;
+	color: rgb(255, 193, 78);
+}
+
+.weather_today.active .weather_temperature p {
+	color: rgb(5, 19, 100);
+}
+
+.weather_today.active .weather_description li {
+	display: flex;
+	font-size: 2.3rem;
+	color: rgb(112, 4, 45);
+	list-style-type: none;
+}
+
+.info ul {
+	margin-top: 35px;
+}
+
+.info li {
+	font-size: 2.3rem;
+	color: #6ac2df;
+	list-style-type: none;
+}
+
+.temperature_img {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+}
+
+@media (max-width: 1230px) {
+	
+	.wrapper_weather {
+		width: 100%;
+	}
+
+	.weather_today {
+		margin: 0 25px;
+		width: 100%;
+	}
+
+	.weather_temperature p {
+		font-size: 15rem;
+	}
+
+	.container_weather {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.info ul {
+		display: block;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.info li {
+		font-size: 1.8rem;
+		list-style-type: none;
+	}
+
+	.temperature_img  {
+		max-width: 100px;
+		max-height: 100px;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (max-width: 650px) {
+	
+	.weather_today {
+		padding: 20px 20px 20px;
+	}
+
+	.region p {
+		font-size: 1.8rem;
+	}
+
+	.weather_temperature p {
+		font-size: 13rem;
+	}
+
+	.temperature_img {
+		width: 125px;
+		height: 125px;
+	}
+}
+
+@media (max-width: 475px) {
+	/* .container_content{
+		margin-top: 0;
+	} */
+
+	.weather_today	 {
+		margin: 20px 15px 0 15px;
+	}
+
+	.weather_description li {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.8rem;
+	}
+
+	.container_weather {
+		flex-direction: column;
+	}
+
+	.temperature p {
+		text-align: center;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+	}
+}

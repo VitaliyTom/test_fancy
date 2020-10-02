@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>fancy-weather</title>
+</head>
+
+<body class="body">
+    <div class="wrapper_progress_bar">
+        <div class="progress_bar">
+            <div class="wrp">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="control_block">
+            <div class="burger_switch">
+                <div class="burger"></div>
+            </div>
+            <div class="container_button">
+                <div class="modal">
+                    <p class="modal_message">---</p>     
+                </div>
+                <div class="wrapper_refresh_img">
+                    <button class="refresh_img_btn">
+                        <div class="spinner"></div>
+                    </button>
+                </div>
+                <div class="wrapper_language">
+                    <ul class="language">
+                        <li class="lan lang_0">
+                            <p class="lang">Eng</p>
+                        </li>
+                        <li class="lan lang_1">
+                            <p class="lang">Blr</p>
+                        </li>
+                        <li class="lan lang_2">
+                            <p class="lang">Eng</p>
+                        </li>
+                        <li class="lan lang_3">
+                            <p class="lang">Pol</p>
+                        </li>
+                        <li class="lan lang_4">
+                            <p class="lang">Rus</p>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="wrapper_change_degree">
+                    <button class="degree_fahrenheit_btn" value="F">°F</button>
+                    <button class="degree_сelsius_btn" value="C">°C</button>
+                </div>
+                <div class="wrapper_theme">
+                    <button class="theme_day_btn" value="day">
+                        <div class="img_icon_day"></div>
+                    </button>
+                    <button class="theme_night_btn active" value="N">
+                        <div class="img_icon_night"></div>
+                    </button>
+                </div>
+                <div class="wrapper_geolacation_img">
+                    <button class="geolacation_img_btn">
+                        <div class="gps"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="container_search">
+                <form class="form_search" action="#">
+                    <input class="search_input active" type="text" placeholder="Search city" minlength="3">
+                    <button class="search_btn" type="submit">search</button>
+                </form>
+            </div>
+        </div>
+        <div class="container_content">
+            <div class="wrapper_weather">
+                <div class="weather">
+                    <div class="weather_today">
+                        <div class="region">
+                            <p class="city_name"></p>
+                            <p class="date"></p>
+                        </div>
+                        <div class="container_weather">
+                            <div class="weather_temperature">
+                                <div class="temperature">
+                                    <p class="temp_value"></p>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="temperature_img"></div>
+                                <ul class="weather_description">
+                                    <li class="weather_conditions"></li>
+                                    <li class="weather_feelslike"></li>
+                                    <li class="weather_wind"></li>
+                                    <li class="weather_humidity"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather_three_day">
+
+                </div>
+            </div>
+            <div class="wrapper_map">
+                <div id="map"></div>
+                <div class="coordinates">
+                    <div class="lat"></div>
+                    <div class="lon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js" type="module"></script>
+    <!-- <script src="src/geolocation/map.js" type="module"></script> -->
+    <!-- <script src="src/control_block/control.js" type="module"></script> -->
+        
+
+</body>
+
+</html>
